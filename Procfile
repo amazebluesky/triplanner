@@ -1,1 +1,1 @@
-web: gunicorn triplanner123.wsgi
+web: gunicorn randy.wsgi
