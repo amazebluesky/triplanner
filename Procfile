@@ -1,0 +1,1 @@
+web: gunicorn triplanner123.wsgi
