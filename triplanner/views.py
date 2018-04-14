@@ -6,4 +6,4 @@ from django.template import loader
 
 
 def home(request):
-    return render(request, 'home.html', context=None, content_type='application/xhtml+xml')
+    return render(request, 'test.html', context=None, content_type='application/xhtml+xml')
