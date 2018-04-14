@@ -1,0 +1,218 @@
+<html lang="zh-tw">
+<meta charset="utf-8">
+
+<head>
+    <title>Trip Planner</title>
+    <link rel="stylesheet" type="text/css" href="home.css" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid" style="background-color:transparent !important;">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="btn-group">
+                    <div class="btn-group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TWD
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">USD</a>
+                            <a class="dropdown-item" href="#">貢丸幣</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#login">
+                        登入
+                    </button>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div id="logo">
+                    <img src="./logo.png" height="100" width="450">
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-addon">目的地</span>
+                    <input id="dest" type="text" class="form-control input-lg" name="dest" placeholder="Enter The Place You Want To Go">
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="row">
+                <div class="input-group">
+                    <span class="input-group-addon">預算</span>
+                    <input id="budget" type="text" class="form-control input-lg" name="budget" placeholder="Enter Your Budget">
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-start">
+                <div class="col-4">
+                    <div>
+                        <p class="text-info">開始日期</p>
+                        <select class="selectpicker">
+                            <option>1</option>>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div>
+                        <p class="text-info">結束日期</p>
+                        <select class="selectpicker">
+                            <option>1</option>>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="login" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">登入</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon">帳號</span>
+                                    <input id="account" type="text" class="form-control " name="account">
+                                </div>
+                                <br>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon">密碼</span>
+                                    <input id="password" type="password" class="form-control" name="password">
+                                </div>
+                                <br>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#register" data-dismiss="modal" aria-label="Close">註冊</button>
+                        <button type="submit" class="btn btn-primary">登入</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="register" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">註冊</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon">帳號</span>
+                                    <input id="account" type="text" class="form-control " name="account">
+                                </div>
+                                <br>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon">密碼</span>
+                                    <input id="password" type="password" class="form-control" name="password">
+                                </div>
+                                <br>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon">email</span>
+                                    <input id="email" type="email" class="form-control" name="email">
+                                </div>
+                            </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-secondary">註冊</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
